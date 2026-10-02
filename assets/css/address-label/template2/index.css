@@ -1,0 +1,147 @@
+body {
+    direction: rtl;
+}
+
+body * {
+    font-family: IRANSans !important;
+}
+
+.address-label-wrapper {
+    width: 29.7cm;
+    margin: 8px auto 40px auto;
+    padding: 8px;
+    page-break-inside: avoid;
+}
+
+.address-label-content {
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    background: white!important;
+    padding: 0 8px 65px 8px;
+}
+
+.address-label-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.website-logo-img {
+    object-fit: contain;
+    height: auto;
+}
+
+.market-data-wrapper {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+}
+
+.md-row {
+    flex-basis: 100%;
+    padding: 10px 15px;
+}
+
+.md-row.single-content {
+    display: flex;
+}
+
+.md-row:first-of-type {
+    border-inline-end: 3px dashed #000;
+}
+
+.shipping-method {
+    font-size: 15pt;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+}
+
+.md-title-parent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.md-icon {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin-inline-end: 8px;
+}
+
+.md-title {
+    display: block;
+    font-size: 15pt;
+    color: #000!important;
+    font-weight: bold!important;
+}
+
+.market-info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    gap: 10px;
+}
+
+.info-row {
+    display: flex;
+    align-items: baseline;
+}
+
+.info-value {
+    font-weight: bold;
+    font-size: 11.5pt;
+    display: block;
+    color: #424242;
+    word-break : break-all;
+}
+
+.info-title {
+    font-weight: bold;
+    font-size: 12pt;
+    display: block;
+    color: black;
+    flex-shrink: 0;
+    margin-inline-end : 6px;
+}
+
+.customer-data-wrapper {
+    display: flex;
+    padding: 10px 110px;
+    border-bottom: 2px solid #000!important;
+}
+
+.cd-title-side {
+    display: flex;
+    margin-inline-end: 110px;
+}
+
+.cd-info-side {
+    flex-basis: 100%;
+}
+
+.cd-title-parent {
+    display: flex;
+    align-items: center;
+}
+
+.cd-icon {
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+
+.cd-title {
+    display: block;
+    font-size: 16pt!important;
+    color: #000!important;
+    font-weight: bold!important;
+}
+
+.customer-info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    gap: 8px;
+}

@@ -1,0 +1,355 @@
+#bg-popup-export-pdf {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999999;
+    background-color: #00000045;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+}
+#bg-popup-export-pdf.active {
+    display: flex;
+}
+
+#bg-popup-export-pdf * {
+    font-family: IRANSans;
+}
+
+#bg-popup-export-pdf .popup-export-pdf {
+    width: 460px;
+    max-width: 460px;
+    background-color: #fff;
+    padding: 23px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#bg-popup-export-pdf .popup-export-pdf .popup-head {
+    display: flex;
+    justify-content: end;
+}
+
+#bg-popup-export-pdf .mask-icon {
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    background: #000;
+}
+
+#bg-popup-export-pdf .popup-btn-close {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+#bg-popup-export-pdf .popup-btn-close .icon-close {
+    background: #85888E;
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+#bg-popup-export-pdf .popup-btn-close .text {
+    font-size: 11px;
+    font-weight: 500;
+    color: #9b9ea5;
+}
+
+#bg-popup-export-pdf .popup-btn-close:hover .icon-close {
+    background: #ff3232;
+}
+
+#bg-popup-export-pdf .popup-btn-close:hover .text {
+    color: #ff3232;
+}
+
+#bg-popup-export-pdf .popup-body {
+    display: flex;
+    flex-direction: column;
+}
+
+#bg-popup-export-pdf .popup-body .popup-title {
+    text-align: center;
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 32px;
+}
+
+#bg-popup-export-pdf .popup-body .row-input {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #212125;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .input-p {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .image-selected {
+    display: flex;
+    flex-direction: column;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .image-selected .input-image-selected{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .image-selected .item-selected.landscape img{
+    width: 200px;
+    height: 125px;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .image-selected .item-selected.portrait img{
+    width: 125px;
+    height: 125px;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .image-selected .item-selected{
+    padding: 8px;
+    border: 1px solid #cfcfcf;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    position: relative;
+}
+#bg-popup-export-pdf .popup-body .row-input .image-selected .item-selected .text-selected{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 10px;
+    font-weight: 400;
+    background-color: #1B6BFF ;
+    color: #fff;
+    border-radius: 100px;
+    padding: 5px 8px;
+    display: none;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .image-selected .item-selected:hover{
+    border-color: #1B6BFF;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .image-selected .item-selected.active{
+    border-color: #1B6BFF;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .image-selected .item-selected.active .text-selected{
+    display: block;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .scale-input{
+    display: flex;
+    flex-direction: column;
+}
+#bg-popup-export-pdf .popup-body .row-input .scale-input .input-scala{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 16px;
+    gap: 16px;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .scale-input .input-scala .custom-scale{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid #B0B3C5;
+    overflow: hidden;
+    padding: 3px;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .scale-input .input-scala .range-scale{
+    flex-grow: 1;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .scale-input .input-scala .custom-scale .btns-scale{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .scale-input .input-scala .custom-scale .btns-scale .scale-icon{
+    background-color: #4C5686;
+    display: block;
+    width: 14px;
+    height: 9px;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .scale-input .input-scala .custom-scale .btns-scale .btn-minus,
+#bg-popup-export-pdf .popup-body .row-input .scale-input .input-scala .custom-scale .btns-scale .btn-plus{
+    background-color: #ECEEF8;
+    padding: 3px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#bg-popup-export-pdf .popup-body .row-input .scale-input .input-scala .custom-scale .btns-scale .btn-minus:hover,
+#bg-popup-export-pdf .popup-body .row-input .scale-input .input-scala .custom-scale .btns-scale .btn-plus:hover{
+    background-color: #d8dbea;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .scale-input .input-scala .custom-scale .custom-scale-input{
+    background: #ffffff;
+    border: unset;
+    box-shadow: unset;
+    outline: unset;
+    width: 45px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 8px;
+    text-align: center;
+    color: #4C5686;
+}
+
+#bg-popup-export-pdf .popup-body .row-input select {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    outline: unset;
+    box-shadow: unset;
+    background-color: #fcfcfc;
+    border: 1px solid #dddddd;
+    width: fit-content;
+    flex-grow: 1;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#bg-popup-export-pdf .popup-body .row-input .description {
+    font-size: 12px;
+    color: #595959;
+    font-weight: 400;
+}
+
+#bg-popup-export-pdf .popup-body .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+#bg-popup-export-pdf .popup-body .btn-print-pdf {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #1B6BFF;
+    padding: 8px 64px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+#bg-popup-export-pdf .popup-body .btn-print-pdf .loading-export {
+    display: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    border: 3px solid #ffffff;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+    margin-inline-start: 8px;
+}
+#bg-popup-export-pdf .popup-body .btn-print-pdf.loading .loading-export{
+    display: block;
+}
+
+#bg-popup-export-pdf .popup-body .btn-print-pdf:hover {
+    background: #1863ec;
+}
+
+
+#btn-export-pdf{
+    background: #1B6BFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    box-shadow: 0 0 10px #959595;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#btn-export-pdf:hover{
+    background: #1863ec;
+}
+#btn-export-pdf .icon-export{
+    background: #ffffff;
+    width: 35px;
+    height: 35px;
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    display: block;
+}
+#btn-export-png{
+    background: #1B6BFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    position: fixed;
+    bottom: 88px;
+    right: 16px;
+    box-shadow: 0 0 10px #959595;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#btn-export-png:hover{
+    background: #1863ec;
+}
+#btn-export-png .icon-export{
+    background: #ffffff;
+    width: 35px;
+    height: 35px;
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    display: block;
+}
+
+@media print {
+    #btn-export-pdf{
+        display: none !important;
+    } #btn-export-png{
+        display: none !important;
+    }
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

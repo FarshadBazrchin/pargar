@@ -1,0 +1,216 @@
+.pargar-factor.totals-table {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/totals-table.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.qrcode {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/qrcode.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.barcode {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/barcode.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.products-count {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/products-count.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.products-discount {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/products-discount.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.customer-address {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/customer-address.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.customer-address-2 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/customer-address-2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.customer-country {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/customer-country.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.customer-email {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/customer-email.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.customer {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/customer.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.customer-note {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/customer-note.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.payment-methode {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/payment-methode.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.customer-phone {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/customer-phone.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.postal-code {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/postal-code.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.shipping-method {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/shipping-method.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.shipping-price {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/shipping-price.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.final-order-price{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/final-order-price.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.id{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/id.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.date{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/date.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.status{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/status.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.coupon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/coupon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.water-mark{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/water-mark.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.custom{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/custom.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pargar-factor.store{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../svg/widgets/store.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

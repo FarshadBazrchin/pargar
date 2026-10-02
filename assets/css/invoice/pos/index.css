@@ -1,0 +1,173 @@
+main {
+    margin: 8px;
+    direction: rtl;
+}
+
+body * {
+    font-family: IRANSans !important;
+}
+.amount {
+    color: black !important;
+}
+.pose-header {
+    border-bottom: 3px dashed black;
+    padding: 0 0 12px 0;
+}
+
+.pos-order-id {
+    font-size: 13.5pt;
+    font-weight: bold;
+    color: #000!important;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.pos-order-creation-date {
+    font-size: 10.5pt;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+    text-align: end;
+    display: block;
+}
+
+.pos-seller-data-wrapper {
+    margin: 10px 0 0 0;
+    border-bottom: 3px dashed black;
+    padding: 0 0 8px 0;
+}
+
+.sd-data-row {
+    display: flex;
+    align-items: baseline;
+}
+
+.sd-data-row:not( :last-of-type ) {
+    margin-bottom: 12px;
+}
+
+.sd-data-value , .sd-data-title {
+    font-size: 11.5pt;
+    font-weight: 500;
+    display: block;
+    color: #525252;
+}
+
+.sd-data-title {
+    flex-shrink: 0;
+}
+
+.sd-data-value {
+    word-break: break-all;
+    margin-inline-start: 6px;
+}
+
+.pos-order-item {
+    border-bottom: 1px dashed #525252;
+    padding: 10px 0;
+}
+
+.pos-order-item:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+
+.pos-product-title , .pid-title , .pid-value {
+    font-size: 10.7pt;
+    font-weight: 500;
+    display: block;
+    color: #2A2A2A;
+    word-break: break-all;
+    margin: 0;
+    padding: 0;
+}
+
+.pid-title , .pid-value {
+    color: #464646;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.pos-item-data-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+
+.pid-wrapper {
+    display: flex;
+}
+
+.pid-value {
+    margin-inline-start: 4px;
+}
+
+.order-total-wrapper {
+    margin-top: 8px;
+    padding: 0 25px 15px 25px;
+    border-bottom: 3px dashed black;
+}
+
+.order-total-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-total-row:not(:last-of-type) {
+    margin-bottom: 12px;
+}
+
+.ot-title , .ot-value {
+    font-size: 13pt;
+    font-weight: bold;
+    display: block;
+    color: black;
+}
+
+.pos-customer-data-wrapper {
+    margin-top: 15px;
+    border-bottom: 3px dashed black;
+    padding-bottom: 12px;
+}
+
+.customer-data-row {
+    display: flex;
+}
+
+.cd-title , .cd-value {
+    font-size: 11.2pt;
+    font-weight: 500;
+    display: block;
+    color: #525252;
+}
+
+.cd-title {
+    flex-shrink: 0;
+}
+
+.cd-value {
+    margin-inline-start: 6px;
+    word-break: break-all;
+}
+
+.customer-data-row:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
+.pos-order-barcode-wrapper {
+    margin-top: 30px;
+}
+
+#pos-order-barcode {
+    margin: auto;
+    display: block;
+}
+
+.pos-footer-text {
+    font-size: 13pt;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin: 8px;
+}

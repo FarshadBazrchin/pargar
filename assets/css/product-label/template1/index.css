@@ -1,0 +1,52 @@
+body {
+    direction: rtl;
+}
+
+body * {
+    font-family: IRANSans !important;
+}
+
+.product-label-wrapper {
+    width: 29.7cm;
+    margin: 8px auto 40px auto;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 8px;
+    page-break-inside: avoid;
+}
+
+.product-label-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.website-title , .product-title , .creation-date {
+    display: block;
+    font-size: 12pt;
+    color: black;
+    font-weight: bold;
+    flex-basis: 100%;
+}
+
+.product-title {
+    text-align: center;
+}
+
+.creation-date {
+    text-align: end;
+}
+
+.barcode-wrapper {
+    margin-top: 12px;
+}
+
+.product-label-barcode-image {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin: auto;
+}
+
+.product-label-barcode-image[src=''] {
+    display: none;
+}

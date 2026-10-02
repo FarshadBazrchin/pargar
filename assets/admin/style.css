@@ -1,0 +1,608 @@
+#magic-factor.main-setting {
+    display: flex;
+    flex-direction: row;
+}
+
+#magic-factor.main-setting  {
+    font-family: "IRANSans";
+}
+
+#magic-factor.main-setting .mask-icon {
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    background: #000;
+}
+
+#magic-factor.main-setting .menu-setting {
+    min-width: 300px;
+    max-width: 300px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: #0000001f 0 0 52px;
+    padding: 16px;
+    height: fit-content;
+    position: sticky;
+    top: 42px;
+}
+
+#magic-factor.main-setting .menu-setting .list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#magic-factor.main-setting .menu-setting .list-items .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#magic-factor.main-setting .menu-setting .list-items .icon-item {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+#magic-factor.main-setting .menu-setting .list-items .title-item {
+    font-size: 15px;
+    font-weight: 500;
+    margin-inline-start: 16px;
+}
+
+#magic-factor.main-setting .menu-setting .list-items .item.active,
+#magic-factor.main-setting .menu-setting .list-items .item:hover {
+    background-image: linear-gradient(to right, #00c6ff 0%, #0072ff 51%, #00c6ff 100%);
+    background-size: 200% auto;
+    transition: 0.5s;
+}
+#magic-factor.main-setting .menu-setting .list-items .item.active:hover {
+    background-position: right center;
+    text-decoration: none;
+}
+
+#magic-factor.main-setting .menu-setting .list-items .item.active .icon-item,
+#magic-factor.main-setting .menu-setting .list-items .item:hover .icon-item {
+    background-color: #ffffff;
+}
+
+#magic-factor.main-setting .menu-setting .list-items .item.active .title-item,
+#magic-factor.main-setting .menu-setting .list-items .item:hover .title-item {
+    color: #ffffff;
+}
+
+#magic-factor.main-setting .content-setting {
+    margin-inline-start: 20px;
+    flex-grow: 1;
+    display: none;
+}
+
+#magic-factor.main-setting .content-setting.active {
+    display: block;
+}
+
+#magic-factor.main-setting .content-setting section {
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: #0000001f 0 0 52px;
+    margin-bottom: 32px;
+}
+
+#magic-factor.main-setting .content-setting section .section-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #00c6ff 0%, #0072ff 51%, #00c6ff 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #2660b8;
+}
+
+#magic-factor.main-setting .content-setting section .section-head .icon-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#magic-factor.main-setting .content-setting section .section-head .btn-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+#magic-factor.main-setting .content-setting section .section-head .btn-actions .btn-save-setting .loading-btn {
+    display: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    border: 3px solid #000000;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+    margin-inline-start: 8px;
+}
+
+#magic-factor.main-setting .content-setting section .section-head .btn-actions .btn-save-setting.loading .loading-btn {
+    display: block;
+}
+
+#magic-factor.main-setting .content-setting section .section-head .btn-save-setting {
+    background-image: linear-gradient(to right, #E0EAFC 0%, #CFDEF3  51%, #E0EAFC  100%);
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    cursor: pointer;
+    padding: 10px 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-size: 200% auto;
+    transition: 0.5s;
+}
+
+#magic-factor.main-setting .content-setting section .section-head .btn-save-setting:hover {
+    background-position: right center;
+    color: #000000;
+    text-decoration: none;
+}
+
+#magic-factor.main-setting .content-setting section .section-head .btn-default-setting {
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+}
+
+#magic-factor.main-setting .content-setting section .section-head .title-section {
+    font-size: 16px;
+    font-weight: bold;
+    margin-inline-start: 16px;
+    color: #ffffff;
+}
+
+#magic-factor.main-setting .content-setting section .section-head .mask-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+}
+
+#magic-factor.main-setting .content-setting section .section-body {
+    padding: 24px;
+    margin-top: 16px;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .item-box {
+    margin-bottom: 16px;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box.mbl {
+    margin-bottom: 32px;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box.group-custom-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box.group-custom-checkbox .item-group {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .item-box label.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 32px;
+    margin-top: 32px;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-template {
+    width: 250px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 23px #e7e7e7;
+    display: flex;
+    flex-direction: column;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-template .bg-image {
+    display: flex;
+    position: relative;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-template .date-update {
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+    background: rgba(242, 242, 242, 0.8);
+    font-size: 11px;
+    font-weight: bold;
+    color: #131111;
+    padding: 2px 16px;
+    border-radius: 100px;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-template .tags {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-template .tags .tag {
+    background: rgba(242, 242, 242, 0.8);
+    font-size: 10px;
+    font-weight: bold;
+    color: #131111;
+    padding: 2px 8px;
+    border-radius: 100px;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-template .error-version {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-template .error-version span {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 22px;
+    color: #FF4949;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-template img{
+    width: 100%;
+    border-radius: 16px;
+    height: 220px;
+    object-fit: cover;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-template .title-template{
+    font-size: 15px;
+    font-weight: bold;
+    color: #131111;
+    margin: 16px 4px;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 0 8px 8px;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-bottom .btn{
+    flex-grow: 1;
+    text-align: center;
+    background: #EEEEEE;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-bottom .btn.import-template{
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    transition: 0.5s;
+    color: #ffffff;
+    background-size: 200% auto;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-bottom .btn.import-template:hover{
+    background-position: right center;
+    text-decoration: none;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-bottom .btn.import-template .loading-btn{
+    display: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    border: 3px solid #ffffff;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+    margin-inline-start: 8px;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-bottom .btn.import-template.loading .loading-btn{
+    display: block;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-bottom .btn.preview-template{
+    background-image: linear-gradient(to right, #fe8c00 0%, #f83600  51%, #fe8c00  100%);
+    color: #fff;
+    transition: 0.5s;
+    background-size: 200% auto;
+    text-decoration: none;
+}
+#magic-factor.main-setting .content-setting section .section-body .item-box .list-template .item-bottom .btn.preview-template:hover{
+    background-position: right center;
+    text-decoration: none;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .items-box .title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #131111;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .items-box.titles-store .title {
+    width: 200px;
+    display: inline-block;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .items-box.titles-store .item-box label.checkbox .title {
+    width: fit-content;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .items-box.titles-store input[type="text"] {
+    width: 400px;
+    display: inline-block;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .items-box input[type="text"] {
+    width: 300px;
+    border: 1px solid #dcdcdc;
+    padding: 5px 16px;
+    border-radius: 8px;
+    color: #0a4890;
+    font-size: 15px;
+    font-weight: 500;
+}
+#magic-factor.main-setting .content-setting section .section-body .items-box input[type="number"] {
+    border: 1px solid #dcdcdc;
+    padding: 5px 16px;
+    border-radius: 8px;
+    color: #0a4890;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .items-box textarea {
+    width: 100%;
+    height: 400px;
+    resize: none;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .items-box textarea:focus {
+    border: 1px solid #0079FF;
+    box-shadow: unset;
+    outline: unset;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .items-box input[type="text"]:focus {
+    border: 1px solid #0079FF;
+}
+#magic-factor.main-setting .content-setting section .section-body .items-box select {
+    width: 300px;
+    border: 1px solid #dcdcdc;
+    padding: 5px 16px;
+    border-radius: 8px;
+    color: #0a4890;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .items-box select:focus {
+    border: 1px solid #0079FF;
+}
+
+#magic-factor.main-setting .content-setting section .section-body .items-box .description {
+    font-size: 13px;
+    margin-top: 16px;
+    color: #676767;
+    line-height: 23px;
+}
+
+#magic-factor .custom-checkbox {
+    background: #C7C7CC;
+    border-radius: 100px;
+    height: 12px;
+    width: 36px;
+    position: relative;
+    display: block;
+    margin-inline-end: 16px;
+    cursor: pointer;
+}
+
+#magic-factor .custom-checkbox.checked {
+    background: #0096FF;
+    box-shadow: 0 0 3px #0075fe;
+}
+
+#magic-factor .custom-checkbox .circle-checkbox {
+    background: #ffffff;
+    border-radius: 100px;
+    height: 19px;
+    width: 19px;
+    box-shadow: 0 0 10px #ccc;
+    display: block;
+    position: absolute;
+    top: -4px;
+    transition: .3s;
+    right: 0;
+}
+
+#magic-factor .custom-checkbox.checked .circle-checkbox {
+    background: #0075FE;
+    right: 17px;
+    box-shadow: 0 0 10px #007fff;
+}
+
+#magic-factor .custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+#magic-factor .image-selected {
+    display: flex;
+    flex-direction: column;
+}
+
+#magic-factor .image-selected .title {
+    width: fit-content !important;
+    margin-bottom: 16px;
+}
+
+#magic-factor .image-selected .preview-image {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    overflow: hidden;
+    border-radius: 8px;
+}
+#magic-factor .image-selected .image {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#magic-factor .image-selected.uploaded .image {
+    display: block;
+    object-fit: contain;
+}
+
+#magic-factor .image-selected .controller-image {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 16px;
+}
+
+#magic-factor .image-selected .controller-image .info-image {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#magic-factor .image-selected .controller-image .action-select-image {
+    background: #C7C7CC24;
+    padding: 6px 8px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    gap: 32px;
+}
+
+#magic-factor .image-selected .preview-image .icon-image {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: #5d5d5d;
+}
+#magic-factor .image-selected .btn-delete-icon {
+    width: 15px;
+    height: 15px;
+    display: block;
+    background: #0874F1;
+}
+#magic-factor .image-selected .btn-image-delete {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #07F;
+    color: #0CB5A7;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    font-weight: bold;
+    display: none;
+}
+
+#magic-factor .image-selected.uploaded .btn-image-delete {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #07F;
+    color: #0874F1;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    font-weight: bold;
+    display: flex;
+}
+
+#magic-factor .image-selected.uploaded .preview-image .icon-image {
+    display: none;
+}
+
+#magic-factor .image-selected .link-image {
+    background: #C7C7CC24;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 190px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#magic-factor .image-selected .btn-image-select {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #07F;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#magic-factor .image-selected.uploaded .btn-image-select {
+    display: none;
+}
+
+#magic-factor .image-selected .btn-image-select:hover {
+    background: #0874F1;
+}
+
+#magic-factor .image-selected .title-image {
+    font-size: 13px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 190px;
+    white-space: nowrap;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
