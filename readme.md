@@ -142,6 +142,6 @@ git push origin feature/your-feature
 
 **ساخته شده با ❤️ برای جامعه‌ی وردپرس فارسی**
 
-[🐛 گزارش باگ](https://github.com/username/pargar/issues) · [💡 پیشنهاد قابلیت](https://github.com/username/pargar/issues) · [📧 تماس با من](mailto:you@example.com)
+[🐛 گزارش باگ](https://github.com/username/pargar/issues) · [💡 پیشنهاد قابلیت](https://github.com/username/pargar/issues) · [📧 تماس با من](bazrchinf@gmail.com)
 
 </div>
